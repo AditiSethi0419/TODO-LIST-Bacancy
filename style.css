@@ -93,6 +93,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 12px;
 }
 .task-content {
   display: flex;
