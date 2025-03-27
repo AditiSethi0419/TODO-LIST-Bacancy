@@ -52,6 +52,8 @@ h2 {
 
 #taskList {
   display: none;
+  list-style-type: none;
+  padding-left: 0px;
 }
 .todo-input {
   border: 1px solid #a6a6a6;
@@ -76,6 +78,8 @@ h2 {
 }
 .todo-input input:focus-visible{
     border: none;
+    outline: none;
+    box-shadow: none;
 }
 .todo-input button {
   font-size: 16px;
@@ -85,3 +89,32 @@ h2 {
   padding: 15.4px 30px;
   cursor: pointer;
 }
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-content {
+  display: flex;
+  align-items: center;
+}
+.task-content input[type="checkbox" i]{
+  background: #666666;
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+}
+.task-content span{
+  font-size: 16px;
+  font-weight: 400;
+}
+.completed-text {
+  text-decoration: line-through;
+  color: gray;
+}
+.edit-btn , .delete-btn{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
